@@ -4,11 +4,6 @@
 
 ### Presets
 
-A [preset](https://wiki.openstreetmap.org/wiki/Preset) represents a specific type of
-[map feature](https://wiki.openstreetmap.org/wiki/Map_features). For example, presets
-can exist for parks, restaurants, drinking water fountains, buildings, railway tracks,
-and many more feature types.
-
 iD editor preset and field types are defined in [JSON](http://en.wikipedia.org/wiki/JSON)
 files located under the `data/presets` folder.
 
