@@ -6,7 +6,7 @@ on:
     types:
       - completed
 permissions:
-  contents: write
+  pull-requests: write
 jobs:
   deploy-preview:
     environment: pr-previews
