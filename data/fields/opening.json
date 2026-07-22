@@ -1,0 +1,13 @@
+{
+    "key": "opening",
+    "type": "number",
+    "label": "Opening Width (Meters)",
+    "snake_case": false,
+    "prerequisiteTag": {
+        "key": "cycle_barrier",
+        "values": [
+            "double",
+            "triple"
+        ]
+    }
+}

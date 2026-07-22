@@ -122,15 +122,6 @@
     },
     {
         "old": {
-            "amenity": "dancing_school"
-        },
-        "replace": {
-            "leisure": "dance",
-            "dance:teaching": "yes"
-        }
-    },
-    {
-        "old": {
             "amenity": "dog_bin"
         },
         "replace": {
@@ -1635,10 +1626,11 @@
     },
     {
         "old": {
-            "highway": "ford"
+            "highway": "path",
+            "ladder": "yes"
         },
         "replace": {
-            "ford": "*"
+            "highway": "ladder"
         }
     },
     {
@@ -1947,15 +1939,6 @@
     },
     {
         "old": {
-            "landuse": "basin"
-        },
-        "replace": {
-            "natural": "water",
-            "water": "basin"
-        }
-    },
-    {
-        "old": {
             "landuse": "churchyard"
         },
         "replace": {
@@ -2178,14 +2161,6 @@
     },
     {
         "old": {
-            "levels": "*"
-        },
-        "replace": {
-            "building:levels": "$1"
-        }
-    },
-    {
-        "old": {
             "man_made": "cut_line"
         },
         "replace": {
@@ -2364,6 +2339,24 @@
         },
         "replace": {
             "craft": "winery"
+        }
+    },
+    {
+        "old": {
+            "map_type": "tactile_map",
+            "information": "map"
+        },
+        "replace": {
+            "information": "tactile_map"
+        }
+    },
+    {
+        "old": {
+            "map_type": "tactile_model",
+            "information": "map"
+        },
+        "replace": {
+            "information": "tactile_model"
         }
     },
     {
@@ -2636,6 +2629,11 @@
         },
         "replace": {
             "name": "$1"
+        }
+    },
+    {
+        "old": {
+            "playground:theme": "playground"
         }
     },
     {
@@ -3178,14 +3176,6 @@
     },
     {
         "old": {
-            "shop": "photo_studio"
-        },
-        "replace": {
-            "craft": "photographer"
-        }
-    },
-    {
-        "old": {
             "shop": "real_estate"
         },
         "replace": {
@@ -3699,6 +3689,15 @@
     },
     {
         "old": {
+            "traffic_calming": "island",
+            "area": "yes"
+        },
+        "replace": {
+            "area:highway": "traffic_island"
+        }
+    },
+    {
+        "old": {
             "tunnel": "1"
         },
         "replace": {
@@ -4166,6 +4165,42 @@
         },
         "replace": {
             "industrial": "brickyard"
+        }
+    },
+    {
+        "old": {
+            "cycleway": "opposite"
+        },
+        "replace": {
+            "oneway:bicycle": "no",
+            "cycleway:both": "no"
+        }
+    },
+    {
+        "old": {
+            "cycleway:left": "opposite"
+        },
+        "replace": {
+            "oneway:bicycle": "no",
+            "cycleway:left": "no"
+        }
+    },
+    {
+        "old": {
+            "man_made": "torii"
+        },
+        "replace": {
+            "man_made": "ceremonial_gate",
+            "ceremonial_gate": "torii"
+        }
+    },
+    {
+        "old": {
+            "man_made": "paifang"
+        },
+        "replace": {
+            "man_made": "ceremonial_gate",
+            "ceremonial_gate": "paifang"
         }
     }
 ]

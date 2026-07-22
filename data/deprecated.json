@@ -76,8 +76,8 @@
     "replace": {"amenity": "charging_station"}
   },
   {
-     "old": {"amenity": "charging_station", "car": "*"},
-     "replace": {"amenity": "charging_station", "motorcar": "$1"}
+    "old": {"amenity": "charging_station", "car": "*"},
+    "replace": {"amenity": "charging_station", "motorcar": "$1"}
   },
   {
     "old": {"amenity": "fire_hydrant"},
@@ -547,7 +547,7 @@
     "replace": {"direction": "W"}
   },
   {
-    "old": {"disabled_spaces":"*"},
+    "old": {"disabled_spaces": "*"},
     "replace": {"capacity:disabled": "$1"}
   },
   {
@@ -787,10 +787,6 @@
     "replace": {"highway": "path", "foot": "no"}
   },
   {
-    "old": {"highway": "ford"},
-    "replace": {"ford": "*"}
-  },
-  {
     "old": {"highway": "path", "ladder": "yes"},
     "replace": {"highway": "ladder"}
   },
@@ -807,8 +803,8 @@
     "replace": {"highway": "road", "surface": "unpaved"}
   },
   {
-     "old": {"historic": "archaeological_site", "site_type": "*"},
-     "replace": {"historic": "archaeological_site", "archaeological_site": "$1"}
+    "old": {"historic": "archaeological_site", "site_type": "*"},
+    "replace": {"historic": "archaeological_site", "archaeological_site": "$1"}
   },
   {
     "old": {"industrial": "gas"},
@@ -854,11 +850,11 @@
     "old": {"internet_access": "wifi"},
     "replace": {"internet_access": "wlan"}
   },
-{
+  {
     "old": {"internet_access": "wi-fi"},
     "replace": {"internet_access": "wlan"}
   },
-{
+  {
     "old": {"internet_access": "WLAN"},
     "replace": {"internet_access": "wlan"}
   },
@@ -935,10 +931,6 @@
     "replace": {"landuse": "flowerbed"}
   },
   {
-    "old": {"landuse": "basin"},
-    "replace": {"natural": "water", "water": "basin"}
-  },
-  {
     "old": {"landuse": "churchyard"},
     "replace": {"landuse": "religious"}
   },
@@ -967,12 +959,12 @@
     "replace": {"natural": "water", "water": "reservoir"}
   },
   {
-     "old": {"landuse": "reservoir", "reservoir_type": "tailings", "natural": "water", "water": "reservoir"},
-     "replace": {"man_made": "tailings_pond"}
+    "old": {"landuse": "reservoir", "reservoir_type": "tailings", "natural": "water", "water": "reservoir"},
+    "replace": {"man_made": "tailings_pond"}
   },
   {
-     "old": {"landuse": "reservoir", "reservoir_type": "tailings"},
-     "replace": {"man_made": "tailings_pond"}
+    "old": {"landuse": "reservoir", "reservoir_type": "tailings"},
+    "replace": {"man_made": "tailings_pond"}
   },
   {
     "old": {"landuse": "school"},
@@ -1041,10 +1033,6 @@
   {
     "old": {"LEVEL": "*"},
     "replace": {"level": "$1"}
-  },
-  {
-    "old": {"levels": "*"},
-    "replace": {"building:levels": "$1"}
   },
   {
     "old": {"man_made": "cut_line"},
@@ -1135,6 +1123,14 @@
     "replace": {"craft": "winery"}
   },
   {
+    "old": {"map_type": "tactile_map", "information": "map"},
+    "replace": {"information": "tactile_map"}
+  },
+  {
+    "old": {"map_type": "tactile_model", "information": "map"},
+    "replace": {"information": "tactile_model"}
+  },
+  {
     "old": {"maxage": "*"},
     "replace": {"max_age": "$1"}
   },
@@ -1171,8 +1167,8 @@
     "replace": {"natural": "wetland", "wetland": "marsh"}
   },
   {
-     "old": {"natural": "water", "water": "reservoir", "reservoir_type": "tailings"},
-     "replace": {"man_made": "tailings_pond"}
+    "old": {"natural": "water", "water": "reservoir", "reservoir_type": "tailings"},
+    "replace": {"man_made": "tailings_pond"}
   },
   {
     "old": {"natural": "waterfall"},
@@ -1529,10 +1525,6 @@
     "replace": {"shop": "perfumery"}
   },
   {
-    "old": {"shop": "photo_studio"},
-    "replace": {"craft": "photographer"}
-  },
-  {
     "old": {"shop": "real_estate"},
     "replace": {"office": "estate_agent"}
   },
@@ -1877,20 +1869,20 @@
     "replace": {"volcano:status": "extinct"}
   },
   {
-    "old": {"voltage-high": "*", "transformer":"generator"},
-    "replace": {"voltage:secondary":"$1", "transformer":"generator"}
+    "old": {"voltage-high": "*", "transformer": "generator"},
+    "replace": {"voltage:secondary": "$1", "transformer": "generator"}
   },
   {
-    "old": {"voltage-low": "*", "transformer":"generator"},
-    "replace": {"voltage:primary":"$1", "transformer":"generator"}
+    "old": {"voltage-low": "*", "transformer": "generator"},
+    "replace": {"voltage:primary": "$1", "transformer": "generator"}
   },
   {
     "old": {"voltage-high": "*"},
-    "replace": {"voltage:primary":"$1"}
+    "replace": {"voltage:primary": "$1"}
   },
   {
     "old": {"voltage-low": "*"},
-    "replace": {"voltage:secondary":"$1"}
+    "replace": {"voltage:secondary": "$1"}
   },
   {
     "old": {"wall_type": "noise_barrier"},
@@ -1999,5 +1991,21 @@
   {
     "old": {"industrial": "brickworks"},
     "replace": {"industrial": "brickyard"}
+  },
+  {
+     "old": {"cycleway": "opposite"},
+     "replace": {"oneway:bicycle": "no", "cycleway:both": "no"}
+  },
+  {
+     "old": {"cycleway:left": "opposite"},
+     "replace": {"oneway:bicycle": "no", "cycleway:left": "no"}
+  },
+  {
+    "old": {"man_made": "torii"},
+    "replace": {"man_made": "ceremonial_gate", "ceremonial_gate": "torii"}
+  },
+  {
+    "old": {"man_made": "paifang"},
+    "replace": {"man_made": "ceremonial_gate", "ceremonial_gate": "paifang"}
   }
 ]
